@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="VäxelConsoleApplication.exe" version="1.0.0.0" publicKeyToken="f9a0ad9f6dd822ca" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="VäxelConsoleApplication" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="VäxelConsoleApplication.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" ID="Custom" SameSite="site" Unrestricted="true" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VäxelConsoleApplication.exe" size="8120">
+      <assemblyIdentity name="VäxelConsoleApplication" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ofOSOmEIRK/Gt7xkiVjpog0ErWc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=DESKTOP-QTP0RST\erik" issuerKeyHash="803dca3d55a553024ee44c7b3b955619f500bf1c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>oE/2uXVDUrBgX03UgrkbaEHpOTY=</DigestValue></Reference></SignedInfo><SignatureValue>lUNCV9wNsGmmoDhcNCGACU+S2Fc+xA/K420wpm0zB/514EVnwl9OCbxoIAxmiJFFWMMtmGH1P5Q+wCII7UJ3Pg4UNHM9g4jeNlpDeLUSGxCnRAA1jfUDo5ZOzVeq055KL0zrltvujKt/+kRTF1OmxvKI/9wE8GSqF+HdIvCespc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>r+xDUZb+4OlDxKoQovdhxg01F1YRL9sxajKrzzW0MN5O7i4RnGvMd4XCsYrmMiEWOrUBM6VYE3iz/umJsrRg/Yswjy+JgWs5IdknqhLFakpvJ+QmgiQPWd4+VEjIDYe0TZQFxo150piox1Tz0tPEtABauMsjdpXJYsyIaM6DFsk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="3639e941681bb982d44d5f60b0524375b9f64fa0" Description="" Url=""><as:assemblyIdentity name="VäxelConsoleApplication.exe" version="1.0.0.0" publicKeyToken="f9a0ad9f6dd822ca" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-QTP0RST\erik</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>H+r4Ydp6jJpfxbf7m9RQ8k8RKnU=</DigestValue></Reference></SignedInfo><SignatureValue>LW7bQVhOa8IqRSMpgpybXD0YJPwUV9JWO9J/fmvJSTL6ZlvywGSpcSNafAY2U4rS0ty/Zuh6vcu9qJvyh9YcLuDza/+vHgpfrF8kvzIpRfWTlm9vksCyJvQbgJtdW1LJRo8+exVBpoqJGYXF8ATyodHojOPS2llcdFuvs1jHTXE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>r+xDUZb+4OlDxKoQovdhxg01F1YRL9sxajKrzzW0MN5O7i4RnGvMd4XCsYrmMiEWOrUBM6VYE3iz/umJsrRg/Yswjy+JgWs5IdknqhLFakpvJ+QmgiQPWd4+VEjIDYe0TZQFxo150piox1Tz0tPEtABauMsjdpXJYsyIaM6DFsk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQMo6+Q/x+3IJLvB9AVQ7DwDANBgkqhkiG9w0BAQUFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtAFEAVABQADAAUgBTAFQAXABlAHIAaQBrMB4XDTIyMTAyNTIyMDc0OFoXDTIzMTAyNjA0MDc0OFowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQBRAFQAUAAwAFIAUwBUAFwAZQByAGkAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAr+xDUZb+4OlDxKoQovdhxg01F1YRL9sxajKrzzW0MN5O7i4RnGvMd4XCsYrmMiEWOrUBM6VYE3iz/umJsrRg/Yswjy+JgWs5IdknqhLFakpvJ+QmgiQPWd4+VEjIDYe0TZQFxo150piox1Tz0tPEtABauMsjdpXJYsyIaM6DFskCAwEAATANBgkqhkiG9w0BAQUFAAOBgQBCdNr3YCzd3C3lOq5+h6A8sDC420XHu2NWFkhleMQXBHpb6wdx8MIB6tGXPWEZws1D5ZpwNq16epHkg5kTcEApbrNJ/xsmBE2/F0Flg2R3nBN+oaVcYl6QdcYHTG4tkID+VKT9SFj+KGor0oMORmh8jBzptYGWxIEtWKwic6+mcw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

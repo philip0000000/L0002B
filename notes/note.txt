@@ -1,0 +1,454 @@
+// The class
+class MyClass
+{
+  // Class members
+  string color = "red";        // field
+  int maxSpeed = 200;          // field
+  public void fullThrottle()   // method
+  {
+    Console.WriteLine("The car is going as fast as it can!");
+  }
+}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public class TimePeriod
+{
+    private double _seconds;
+
+    public double Hours // property
+    {
+        get { return _seconds / 3600; }
+        set
+        {
+            if (value < 0 || value > 24)
+                throw new ArgumentOutOfRangeException(nameof(value),
+                      "The valid range is between 0 and 24.");
+
+            _seconds = value * 3600;
+        }
+    }
+}
+
+TimePeriod t = new TimePeriod();
+t.Hours = 24; // The property assignment causes the 'set' accessor to be called.
+
+// Retrieving the property causes the 'get' accessor to be called.
+Console.WriteLine($"Time in hours: {t.Hours}");
+// The example displays the following output:
+//    Time in hours: 24
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===( C# Properties )===
+class DataStore<T>
+{
+    string _Name; // Field
+    int _Age; // Field
+
+    public string Name { get; set; } // Auto-implemented properties
+
+    public T Data
+    {
+        get {
+            return this.Data;
+        }
+        set {
+            this.Data = value;
+        }
+    }
+
+    public string NameAndAge
+    {
+        get => _Name + _Age.ToString();
+        set { _Name = value; _Age = 1; }
+    }
+    public string NameAndAge
+    {
+        get => _Name + _Age.ToString();
+        set { _Name = value; _Age = 1; }
+    }
+    public int DefaultValue
+    {
+        get => default(int); // default(int) == 0
+        //set => DefaultValue = value; }
+        set => DefaultValue = default(int);
+    }
+}
+
+===( C# Inheritance )===
+(https://www.w3schools.com/cs/cs_inheritance.php)
+ * "inheritance concept" into two categories:
+ 1. Derived Class (child) - the class that inherits from another class
+ 2. Base Class (parent) - the class being inherited from
+
+ * To inherit from a class, use the : symbol.
+
+---Why And When To Use "Inheritance"?---
+ * it is useful for code reusability
+
+	Keyword:
+sealed == no other classes to inherit from it
+
+virtual == base class, method can be override. Muse exist to override!
+override == overide method, else base class is used(!) if same method name
+
+===( C# Abstraction and Interface )===
+	Keyword:
+abstract == Abstract class, Abstract method: body is provided by the derived class (inherited from) (some method/variables can be abstract, other not)
+                 (method/variables that are not abstract in the abstract class, can only be called from derived class objects)
+interface == completely "abstract class"
+	(all method/variables can be abstract, other not)
+	(By default, members of an interface are abstract and public)
+	(no constructor, cannot be used to create objects)
+ * Multiple Interfaces
+multiple interfaces are allowed in C# to be inherite to derived classes
+
+	Hungarian notation:
+It is considered good practice to start with the letter "I" at the beginning of an interface, as it makes it easier for yourself and others to remember that it is an interface and not a class.
+
+ * Interfaces can contain properties and methods, but not fields.
+ * No, need for "override" keyword in derived Class
+
+// Interface
+interface IAnimal 
+{
+  void animalSound(); // interface method (does not have a body)
+}
+
+// Pig "implements" the IAnimal interface
+class Pig : IAnimal 
+{
+  public void animalSound() 
+  {
+    // The body of animalSound() is provided here
+    Console.WriteLine("The pig says: wee wee");
+  }
+}
+
+class Program 
+{
+  static void Main(string[] args) 
+  {
+    Pig myPig = new Pig();  // Create a Pig object
+    myPig.animalSound();
+  }
+}
+
+===( IEnumerable in C# )===
+(https://www.c-sharpcorner.com/UploadFile/0c1bb2/ienumerable-interface-in-C-Sharp/)
+
+
+
+===( C# Generics (C++ templates) )===
+(https://www.tutorialsteacher.com/csharp/csharp-generics)
+ * C# allows you to define generic:
+classes,
+interfaces,
+abstract classes,
+fields,
+methods,
+static methods,
+properties,
+events,
+delegates,
+operators
+	using: type parameter
+ * generic type is declared by specifying a type parameter in an angle brackets after a type name, e.g. TypeName<T> where T is a type parameter
+
+class DataStore<T> // T == type parameter
+{                  // if only exist one type parameter, use only big T
+    public T Data { get; set; }
+}
+
+ * Use T at the begining of a type parameter, if only exist 1 type parameter, can use only "T", if more, add T to end of a name(more then one letter)
+
+class KeyValuePair<TKey, TValue> // multiple type parameters, with comma
+{
+    public T data; // generic fields, it cannot be initialized
+
+    public TKey Key { get; set; }
+    public TValue Value { get; set; }
+}
+
+DataStore<string> store = new DataStore<string>(); // Instantiating generic class
+
+generic method == if method has return "type parameter" or parameter has "type parameter"
+
+---
+ * A non-generic class can include generic methods by specifying a type parameter in angle brackets with the method name, as shown below.
+
+class Printer
+{
+    public void Print<T>(T data)
+    {
+        Console.WriteLine(data);
+    }
+}
+
+Printer printer = new Printer();
+printer.Print<int>(100);
+printer.Print(200); // type infer from the specified value
+printer.Print<string>("Hello");
+printer.Print("World!"); // type infer from the specified value
+---
+
+
+
+===( C# - Delegates (C++ function pointers) )===
+(https://www.tutorialsteacher.com/csharp/csharp-delegates)
+ * delegate is a reference type data type
+ * defines the method signature
+delegate can be declared using the delegate keyword followed by a function signature
+	e.g.:
+[access modifier] delegate [return type] [delegate name]([parameters])
+	e.g.:
+public delegate void MyDelegate(string msg);
+ * After declaring a delegate, we need to set the target method or a lambda expression:
+We can do it by creating an object of the delegate using the new keyword and passing a method whose signature matches the delegate signature
+ * a delegate can be invoked using the Invoke() method or using the () operator
+using System;
+
+public delegate void MyDelegate(string msg); // declaring a delegate
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        MyDelegate del = ClassA.MethodA;
+        del("Hello World");
+
+        del = ClassB.MethodB;
+        del("Hello World");
+
+        del = (string msg) => Console.WriteLine("Called lambda expression: " + msg);
+        del.Invoke("Hello World");
+
+        Console.ReadKey(true);
+    }
+}
+
+class ClassA
+{
+    static public void MethodA(string message)
+    {
+        Console.WriteLine("ClassA.MethodA(), parameter: " + message);
+    }
+}
+
+class ClassB
+{
+    static public void MethodB(string message)
+    {
+        Console.WriteLine("ClassB.MethodB(), parameter: " + message);
+    }
+}
+
+ * A method can have a parameter of the delegate type
+ * In .NET, Func and Action types are built-in generic delegates that should be used for most common delegates instead of creating new custom delegates.
+---Multicast Delegate---
+ * The delegate can point to multiple methods. A delegate that points multiple methods is called a multicast delegate. The "+" or "+=" operator adds a function to the invocation list, and the "-" and "-=" operator removes it.
+ * If a multicast delegate returns a value then it returns the value from the last assigned target method.
+ * can use Generic Delegate, e.g.:
+public delegate T add<T>(T param1, T param2); // generic delegate
+
+
+
+===( C# - Func Delegate )===
+(https://www.tutorialsteacher.com/csharp/csharp-func-delegate)
+ * C# includes built-in generic delegate types Func and Action, so that you don't need to define custom delegates manually in most cases.
+public delegate TResult Func<in T, in T2 out TResult>(T arg, T2 arg2);
+
+class Program
+{
+    static int Sum(int x, int y)
+    {
+        return x + y;
+    }
+
+    static void Main(string[] args)
+    {
+        Func<int,int, int> add = Sum;
+        int result = add(10, 10);
+        Console.WriteLine(result); 
+    }
+}
+ * The Func delegate takes one or more input parameter(T(above def) or more as parameters) and one out parameter(TResult as in above, only one)
+ * A Func delegate type can include 0 to 16 input parameters of different types
+ * You can assign an anonymous method to the Func delegate by using the delegate keyword, e.g.:
+Func<int> getRandomNumber = delegate()
+{
+	Random rnd = new Random();
+	return rnd.Next(1, 100);
+};
+ * A Func delegate can also be used with a lambda expression, e.g.:
+Func<int> getRandomNumber = () => new Random().Next(1, 100);
+	// Or
+Func<int, int, int>  Sum  = (x, y) => x + y;
+
+Action<int> printActionDel = ConsolePrint;
+	// Or
+Action<int> printActionDel = new Action<int>(ConsolePrint);
+ * An Action delegate can take up to 16 input parameters of different types
+ * you can use any method that doesn't return a value with Action delegate types
+
+===( C# - Action Delegate )===
+(https://www.tutorialsteacher.com/csharp/csharp-action-delegate)
+ * Action is a delegate type defined in the System namespace.
+ * An Action type delegate is the same as Func delegate except that the Action delegate doesn't return a value. In other words, an Action delegate can be used with a method that has a void return type.
+ * An Action delegate can take up to 16 input parameters of different types.
+ * An Anonymous method can also be assigned to an Action delegate, e.g.:
+Action<int> printActionDel = delegate(int i)
+{
+	Console.WriteLine(i);
+};
+printActionDel(10);
+ * A Lambda expression also can be used with an Action delegate:
+Action<int> printActionDel = i => Console.WriteLine(i);
+printActionDel(10);
+
+
+===( C# - Predicate Delegate  )===
+(https://www.tutorialsteacher.com/csharp/csharp-predicate)
+ * Predicate is the delegate like Func and Action delegates. It represents a method containing a set of criteria and checks whether the passed parameter meets those criteria. A predicate delegate methods must take one input parameter and return a boolean - true or false.
+ * Predicate delegate must takes one input parameter and boolean return type
+ * The Predicate delegate is defined in the System namespace
+
+ * The predicate allows methods like Where to exist and be used succinctly.
+
+
+
+===( C# - Anonymous Method )===
+(https://www.tutorialsteacher.com/csharp/csharp-anonymous-method)
+Print print = delegate(int val) {
+	Console.WriteLine("Inside Anonymous method. Value: {0}", val); 
+};
+ * Anonymous methods can access variables defined in an outer function.
+int i = 10;
+
+Print prnt = delegate(int val) {
+	val += i;
+	Console.WriteLine("Anonymous method: {0}", val);
+};
+
+prnt(100);
+
+ * Anonymous methods can also be passed to a method that accepts the delegate as a parameter.
+
+---Anonymous Method Limitations---
+It cannot contain jump statement like goto, break or continue.
+It cannot access ref or out parameter of an outer method.
+It cannot have or access unsafe code.
+It cannot be used on the left side of the is operator.
+
+
+
+===( default )===
+(https://stackoverflow.com/questions/2432909/what-does-defaultobject-do-in-c)
+int i = default(int); // default(int) == 0
+bool b = default(bool) // default(bool) == false
+ * The biggest use of default(T) is in generics, and things like the Try... pattern:
+bool TryGetValue(out T value) {
+    if(NoDataIsAvailable) {
+        value = default(T); // because I have to set it to *something*
+        return false;
+    }
+    value = GetData();
+    return true;
+}
+
+
+
+===( Boxing and Unboxing )===
+(https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing)
+Works like C++ pointer on the stack, pointing to what ever is on the heap(any data type).
+Boxing   == implicit
+unboxing == explicit
+ * boxing and unboxing are computationally expensive processes
+(When a value type is boxed, a new object must be allocated and constructed. To a lesser degree, the cast required for unboxing is also expensive computationally.)
+
+int i = 123;
+object o = (object)i;  // explicit boxing (explicit boxing is never required)
+o = 123;
+i = (int)o;  // unboxing
+
+List<object> mixedList = new List<object>(); // can have any data type
+(Generic has a performance advantage because it removes the possibilities of boxing and unboxing)
+
+
+
+===( unsafe )===
+can use c++ pointers in c#
+unsafe {
+	int b = 5;
+	int* p = &b;
+}
+===( base )===
+call the base method or constructor of deriveted class, when inherited
+
+
+
+===( When to use Struct over Class in C# )===
+(https://www.tutorialsteacher.com/articles/when-to-use-struct-over-class-in-csharp)
+---Limitations of Struct---
+ * The Struct is a similar and lighter version of the class in C#
+ * No default constructor or destructor
+ * Structs inherit from System.ValueType, cannot be inherited
+---Use struct---
+ * If all the member fields are value types.
+ * If instances of the type are small and short-lived or embedded to other instances.
+ * If it logically denotes a single value, same as primitive types like int, double, etc.
+ * If the size of the instance is below 16 bytes.
+ * If it will not be boxed and unboxed again and again.
+ * If it is immutable, that means when an instance of a reference type gets changed, it affects all the references indicating the instance. But, in the case of value types, it does not affect any of its copies. For this reason, changes in value types may raise confusion in many users. So, it should be immutable.
+
+https://stackoverflow.com/questions/521298/when-should-i-use-a-struct-rather-than-a-class-in-c
+ * You use structs for performance when stored in arrays
+
+
+
+=========================================================================
+===( C# - Events )===
+(https://www.tutorialsteacher.com/csharp/csharp-event)
+ * If all the member fields are value types.
+ * If instances of the type are small and short-lived or embedded to other instances.
+
+
+
+
+
+===( C# - Extension Method )===
+(https://www.tutorialsteacher.com/csharp/csharp-extension-method)
+
+
+
+
+
+---( Built-in Exception Classes )---
+https://www.tutorialsteacher.com/csharp/csharp-exception
+
+
+---( yield statement (C# reference) )---
+
+
+---( params (C# Reference) (...) )---
+(https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/params)
+params == keyword, is for ...
+
+
+
+=========================================================================
+=========================================================================
+enum vs const
+
+enums when you want to define a range of values that something can be
+	or
+a set of possible things
+
+Constants should be for a single value, like PI. There isn't a range of PI values, there is just PI.
+
+
+a: Constants don't necessarily indicate a relationship between the constants, whereas an enumeration indicates that something can be one of the set defined by the enum.
+b: A defined enumeration can help you with type checking when used as an argument. Constants are just values, so they don't provide any additional semantic information.
+
+
+
+
+

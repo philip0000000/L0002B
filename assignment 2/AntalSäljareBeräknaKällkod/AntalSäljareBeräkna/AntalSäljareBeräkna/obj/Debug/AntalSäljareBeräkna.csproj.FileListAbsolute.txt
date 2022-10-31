@@ -1,0 +1,14 @@
+C:\MyCode\c#\c#kurs\2\AntalSäljareBeräkna\AntalSäljareBeräkna\bin\Debug\AntalSäljareBeräkna.exe.config
+C:\MyCode\c#\c#kurs\2\AntalSäljareBeräkna\AntalSäljareBeräkna\bin\Debug\AntalSäljareBeräkna.exe.manifest
+C:\MyCode\c#\c#kurs\2\AntalSäljareBeräkna\AntalSäljareBeräkna\bin\Debug\AntalSäljareBeräkna.application
+C:\MyCode\c#\c#kurs\2\AntalSäljareBeräkna\AntalSäljareBeräkna\bin\Debug\AntalSäljareBeräkna.exe
+C:\MyCode\c#\c#kurs\2\AntalSäljareBeräkna\AntalSäljareBeräkna\bin\Debug\AntalSäljareBeräkna.pdb
+C:\MyCode\c#\c#kurs\2\AntalSäljareBeräkna\AntalSäljareBeräkna\obj\Debug\AntalSäljareBeräkna.Form1.resources
+C:\MyCode\c#\c#kurs\2\AntalSäljareBeräkna\AntalSäljareBeräkna\obj\Debug\AntalSäljareBeräkna.Properties.Resources.resources
+C:\MyCode\c#\c#kurs\2\AntalSäljareBeräkna\AntalSäljareBeräkna\obj\Debug\AntalSäljareBeräkna.csproj.GenerateResource.cache
+C:\MyCode\c#\c#kurs\2\AntalSäljareBeräkna\AntalSäljareBeräkna\obj\Debug\AntalSäljareBeräkna.csproj.CoreCompileInputs.cache
+C:\MyCode\c#\c#kurs\2\AntalSäljareBeräkna\AntalSäljareBeräkna\obj\Debug\AntalSäljareBeräkna.exe.manifest
+C:\MyCode\c#\c#kurs\2\AntalSäljareBeräkna\AntalSäljareBeräkna\obj\Debug\AntalSäljareBeräkna.application
+C:\MyCode\c#\c#kurs\2\AntalSäljareBeräkna\AntalSäljareBeräkna\obj\Debug\AntalSäljareBeräkna.exe
+C:\MyCode\c#\c#kurs\2\AntalSäljareBeräkna\AntalSäljareBeräkna\obj\Debug\AntalSäljareBeräkna.pdb
+C:\MyCode\c#\c#kurs\2\AntalSäljareBeräkna\AntalSäljareBeräkna\obj\Debug\AntalSäljareBeräkna.csproj.AssemblyReference.cache

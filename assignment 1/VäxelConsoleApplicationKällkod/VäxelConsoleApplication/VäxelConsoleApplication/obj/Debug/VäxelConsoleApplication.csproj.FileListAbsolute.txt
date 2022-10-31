@@ -1,0 +1,11 @@
+C:\MyCode\c#\c#kurs2\VäxelConsoleApplication\VäxelConsoleApplication\bin\Debug\VäxelConsoleApplication.exe
+C:\MyCode\c#\c#kurs2\VäxelConsoleApplication\VäxelConsoleApplication\bin\Debug\VäxelConsoleApplication.pdb
+C:\MyCode\c#\c#kurs2\VäxelConsoleApplication\VäxelConsoleApplication\obj\Debug\VäxelConsoleApplication.csproj.AssemblyReference.cache
+C:\MyCode\c#\c#kurs2\VäxelConsoleApplication\VäxelConsoleApplication\obj\Debug\VäxelConsoleApplication.csproj.CoreCompileInputs.cache
+C:\MyCode\c#\c#kurs2\VäxelConsoleApplication\VäxelConsoleApplication\obj\Debug\VäxelConsoleApplication.exe
+C:\MyCode\c#\c#kurs2\VäxelConsoleApplication\VäxelConsoleApplication\obj\Debug\VäxelConsoleApplication.pdb
+C:\MyCode\c#\c#kurs2\VäxelConsoleApplication\VäxelConsoleApplication\bin\Debug\VäxelConsoleApplication.exe.manifest
+C:\MyCode\c#\c#kurs2\VäxelConsoleApplication\VäxelConsoleApplication\bin\Debug\VäxelConsoleApplication.application
+C:\MyCode\c#\c#kurs2\VäxelConsoleApplication\VäxelConsoleApplication\obj\Debug\VäxelConsoleApplication.TrustInfo.xml
+C:\MyCode\c#\c#kurs2\VäxelConsoleApplication\VäxelConsoleApplication\obj\Debug\VäxelConsoleApplication.exe.manifest
+C:\MyCode\c#\c#kurs2\VäxelConsoleApplication\VäxelConsoleApplication\obj\Debug\VäxelConsoleApplication.application

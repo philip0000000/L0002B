@@ -1,0 +1,8 @@
+Namn          Persnr          Distrikt          Antal
+p1            9511034123      D1                11
+p3            9707143485      D1                12
+2 säljare har nått nivå 1: under 50 artiklar
+
+p2            9911166483      D2                52
+1 säljare har nått nivå 2: mellan 50-99 artiklar
+

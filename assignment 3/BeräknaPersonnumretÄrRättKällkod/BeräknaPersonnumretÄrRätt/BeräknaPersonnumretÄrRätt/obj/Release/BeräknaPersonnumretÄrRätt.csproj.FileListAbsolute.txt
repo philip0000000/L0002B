@@ -1,0 +1,14 @@
+C:\MyCode\c#\c#kurs\3\BeräknaPersonnumretÄrRätt\BeräknaPersonnumretÄrRätt\bin\Release\BeräknaPersonnumretÄrRätt.exe.config
+C:\MyCode\c#\c#kurs\3\BeräknaPersonnumretÄrRätt\BeräknaPersonnumretÄrRätt\bin\Release\BeräknaPersonnumretÄrRätt.exe.manifest
+C:\MyCode\c#\c#kurs\3\BeräknaPersonnumretÄrRätt\BeräknaPersonnumretÄrRätt\bin\Release\BeräknaPersonnumretÄrRätt.application
+C:\MyCode\c#\c#kurs\3\BeräknaPersonnumretÄrRätt\BeräknaPersonnumretÄrRätt\bin\Release\BeräknaPersonnumretÄrRätt.exe
+C:\MyCode\c#\c#kurs\3\BeräknaPersonnumretÄrRätt\BeräknaPersonnumretÄrRätt\bin\Release\BeräknaPersonnumretÄrRätt.pdb
+C:\MyCode\c#\c#kurs\3\BeräknaPersonnumretÄrRätt\BeräknaPersonnumretÄrRätt\obj\Release\BeräknaPersonnumretÄrRätt.csproj.AssemblyReference.cache
+C:\MyCode\c#\c#kurs\3\BeräknaPersonnumretÄrRätt\BeräknaPersonnumretÄrRätt\obj\Release\BeräknaPersonnumretÄrRätt.Form1.resources
+C:\MyCode\c#\c#kurs\3\BeräknaPersonnumretÄrRätt\BeräknaPersonnumretÄrRätt\obj\Release\BeräknaPersonnumretÄrRätt.Properties.Resources.resources
+C:\MyCode\c#\c#kurs\3\BeräknaPersonnumretÄrRätt\BeräknaPersonnumretÄrRätt\obj\Release\BeräknaPersonnumretÄrRätt.csproj.GenerateResource.cache
+C:\MyCode\c#\c#kurs\3\BeräknaPersonnumretÄrRätt\BeräknaPersonnumretÄrRätt\obj\Release\BeräknaPersonnumretÄrRätt.csproj.CoreCompileInputs.cache
+C:\MyCode\c#\c#kurs\3\BeräknaPersonnumretÄrRätt\BeräknaPersonnumretÄrRätt\obj\Release\BeräknaPersonnumretÄrRätt.exe.manifest
+C:\MyCode\c#\c#kurs\3\BeräknaPersonnumretÄrRätt\BeräknaPersonnumretÄrRätt\obj\Release\BeräknaPersonnumretÄrRätt.application
+C:\MyCode\c#\c#kurs\3\BeräknaPersonnumretÄrRätt\BeräknaPersonnumretÄrRätt\obj\Release\BeräknaPersonnumretÄrRätt.exe
+C:\MyCode\c#\c#kurs\3\BeräknaPersonnumretÄrRätt\BeräknaPersonnumretÄrRätt\obj\Release\BeräknaPersonnumretÄrRätt.pdb

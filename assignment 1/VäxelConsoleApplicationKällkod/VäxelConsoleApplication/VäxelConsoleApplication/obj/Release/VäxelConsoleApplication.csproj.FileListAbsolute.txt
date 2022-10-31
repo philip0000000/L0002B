@@ -1,0 +1,5 @@
+C:\MyCode\c#\c#kurs2\VäxelConsoleApplication\VäxelConsoleApplication\bin\Release\VäxelConsoleApplication.exe
+C:\MyCode\c#\c#kurs2\VäxelConsoleApplication\VäxelConsoleApplication\bin\Release\VäxelConsoleApplication.pdb
+C:\MyCode\c#\c#kurs2\VäxelConsoleApplication\VäxelConsoleApplication\obj\Release\VäxelConsoleApplication.csproj.CoreCompileInputs.cache
+C:\MyCode\c#\c#kurs2\VäxelConsoleApplication\VäxelConsoleApplication\obj\Release\VäxelConsoleApplication.exe
+C:\MyCode\c#\c#kurs2\VäxelConsoleApplication\VäxelConsoleApplication\obj\Release\VäxelConsoleApplication.pdb

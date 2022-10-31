@@ -1,0 +1,10 @@
+Namn          Persnr          Distrikt          Antal
+1             1111111111      1                 45
+1 säljare har nått nivå 1: under 50 artiklar
+
+2             1111111111      2                 123
+4             1111111111      123               123
+2 säljare har nått nivå 3: mellan 100-199 artiklar
+
+3             1111111111      123123124         123123124
+1 säljare har nått nivå 4: över 199 artiklar
